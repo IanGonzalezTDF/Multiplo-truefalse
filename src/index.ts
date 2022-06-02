@@ -5,11 +5,12 @@ boton?.addEventListener("click", () => {
   let b: number = Number(dato2.value);
 
   function esMultiplo() {
-    if (a % b == 0) {
-      return "true";
+    if (a % b === 0) {
+      return true;
     } else {
-      return "false";
+      return false;
     }
   }
-  console.log(esMultiplo());
+
+  console.log(a + " es multiplo de " + b + ": ", esMultiplo());
 });
